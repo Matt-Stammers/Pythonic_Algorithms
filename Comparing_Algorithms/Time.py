@@ -31,3 +31,4 @@ print(sumOfN3(10))
        print("Sum is %d required %10.7f seconds"%sumOfN3(10000)) # We can see that this is far quicker to execute!
       
 # in fact this does not scale even as the numbers are increased. This is therefore a better algorithm.
+# but these measurements are dependent on your machine and other variables. Thus we need another way to assess algorithms - Big O Notation.
