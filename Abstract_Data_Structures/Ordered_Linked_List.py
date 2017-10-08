@@ -32,7 +32,7 @@ class OrderedList:
     def isEmpty(self): # if the head of the list is empty will return None
         return self.head == None
         
-    def add(self,item):
+    def add(self,item): # this time the add function will work in an ordered fashion - ie it will wait until the node is greater than the current item before inserting.
         current = self.head
         previous = None
         stop = False
@@ -51,7 +51,7 @@ class OrderedList:
             temp.setNext(current)
             previous.setNext(temp)
         
-    def size(self): # this gives the size of the unordered linked list
+    def size(self): 
         current = self.head
         count = 0
         while current != None:
@@ -60,7 +60,7 @@ class OrderedList:
 
         return count
         
-    def search(self,item):
+    def search(self,item): # this will work in the new Ordered list
         current = self.head
         found = False
         stop = False
@@ -75,7 +75,7 @@ class OrderedList:
 
         return found
         
-    def remove(self,item): # up until now we have only been able to traverse one way. This time we add the previous function that can inch-worm backwards
+    def remove(self,item): 
         current = self.head
         previous = None
         found = False
