@@ -25,7 +25,7 @@ def tree(branchLen,t):
     if branchLen > 5:
         t.forward(branchLen)
         t.right(20)
-        tree(branchLen-15,t)
+        tree(branchLen-20,t)
         t.left(40)
         tree(branchLen-15,t)
         t.right(20)
@@ -44,3 +44,4 @@ def main():
 
 main()
 
+# this creates a wonky tree. You can experiment with all sorts of other options
